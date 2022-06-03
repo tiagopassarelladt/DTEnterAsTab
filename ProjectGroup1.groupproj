@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2F796ED3-4180-41B3-AB4C-2CD36C566A83}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DTEnterAsTab.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo\DemoEnter.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DTEnterAsTab">
+        <MSBuild Projects="DTEnterAsTab.dproj"/>
+    </Target>
+    <Target Name="DTEnterAsTab:Clean">
+        <MSBuild Projects="DTEnterAsTab.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DTEnterAsTab:Make">
+        <MSBuild Projects="DTEnterAsTab.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DemoEnter">
+        <MSBuild Projects="Demo\DemoEnter.dproj"/>
+    </Target>
+    <Target Name="DemoEnter:Clean">
+        <MSBuild Projects="Demo\DemoEnter.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DemoEnter:Make">
+        <MSBuild Projects="Demo\DemoEnter.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DTEnterAsTab;DemoEnter"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DTEnterAsTab:Clean;DemoEnter:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DTEnterAsTab:Make;DemoEnter:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

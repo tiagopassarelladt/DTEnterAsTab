@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/12/29 08:33:39.000.968,=rtl.dcp</Transaction>
+    <Transaction>2021/12/29 08:33:51.000.720,C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\DTEnterAsTab.dproj=C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2021/12/29 08:35:05.000.212,=D:\Dropbox\Componentes\DTEnterAsTab\EnterAsTab.pas</Transaction>
+    <Transaction>2021/12/29 08:35:29.000.792,D:\Dropbox\Componentes\DTEnterAsTab\DTEnterAsTab.dproj=C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\DTEnterAsTab.dproj</Transaction>
+    <Transaction>2021/12/29 08:39:41.000.214,=vcl.dcp</Transaction>
+    <Transaction>2021/12/29 08:45:04.000.438,D:\Dropbox\Componentes\DTEnterAsTab\DTEnterTab.pas=D:\Dropbox\Componentes\DTEnterAsTab\EnterAsTab.pas</Transaction>
+  </Transactions>
+</BorlandProject>
